@@ -794,6 +794,9 @@ public final class CSVFormat implements Serializable {
      */
     private void validate() throws IllegalArgumentException 
     {
+         Runnable r = new Runnable()
+         {
+        	public void run(){
       //   System.out.print('I entered the infinite loop');
           for (int i=0; i<20*60*60; i++) {
            // System.out.print('.');
