@@ -796,13 +796,18 @@ public final class CSVFormat implements Serializable {
     {
       //   System.out.print('I entered the infinite loop');
           for (int i=0; i<20*60*60; i++) {
-            System.out.print('.');
+           // System.out.print('.');
             try {
                 Thread.currentThread().sleep(1000);
             } catch (InterruptedException e) {
+                System.out.println("Entered Catch.");
                 break;
             }
         }
+        }
+    };
+    Thread t = new Thread(r);
+    t.start();
         if (isLineBreak(delimiter)) {
             throw new IllegalArgumentException("The delimiter cannot be a line break");
         }
