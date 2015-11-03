@@ -50,17 +50,17 @@ public class CSVFormatTest {
   	   System.out.println("HELLOOOOOOOOOOOO");
    }
    */
-   
+
     private static void assertNotEquals(final Object right, final Object left) 
     {
         assertFalse(right.equals(left));
         assertFalse(left.equals(right));
     }
-/*
+
     private static CSVFormat copy(final CSVFormat format) {
         return format.withDelimiter(format.getDelimiter());
     }
-*/
+
     @Test(expected = IllegalArgumentException.class)
     public void testDelimiterSameAsCommentStartThrowsException() {
         CSVFormat.DEFAULT.withDelimiter('!').withCommentMarker('!');
