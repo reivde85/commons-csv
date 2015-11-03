@@ -44,15 +44,11 @@ import org.junit.Test;
  * @version $Id$
  */
 public class CSVFormatTest {
-
-    public class CSVFormatTest {
--		+    
++    
 +    public CSVFormatTest(){
-+        System.out.println("I am executing CSVFormatTest");
++        System.out.println("CSVFormatTest started");
 +    }
-+   
-   
-   
++ 
    
     private static void assertNotEquals(final Object right, final Object left) {
         assertFalse(right.equals(left));
