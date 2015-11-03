@@ -47,8 +47,8 @@ public class CSVFormatTest {
    
    public CSVFormatTest()
    {
-+  	System.out.println("HELLOOOOOOOOOOOO");
-+   }
+  	   System.out.println("HELLOOOOOOOOOOOO");
+   }
    
     private static void assertNotEquals(final Object right, final Object left) 
     {
